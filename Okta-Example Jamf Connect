@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HiddenMenuItems</key>
+	<array>
+		<string>Actions</string>
+		<string>GetSoftware</string>
+		<string>Home</string>
+		<string>Tickets</string>
+		<string>LastUser</string>
+		<string>Preferences</string>
+		<string>Shares</string>
+		<string>QuitJamfConnect</string>
+	</array>
+	<key>CustomMenuItems</key>
+	<dict>
+		<key>About</key>
+		<string>About Jamf Connect</string>
+		<key>Connect</key>
+		<string>Sign in via Okta</string>
+	</dict>
+	<key>Appearance</key>
+	<dict>
+		<key>ShowWelcomeWindow</key>
+		<false/>
+	</dict>
+	<key>IdPSettings</key>
+	<dict>
+		<key>ChangePasswordURL</key>
+		<string>ENTER URL HERE A USER WOULD USE TO CHANGE THEIR PASSWORD ON THEIR OWN</string>
+		<key>OktaAuthServer</key>
+		<string>ENTER YOUR OKTA SERVER HERE</string>
+		<key>Provider</key>
+		<string>Okta</string>
+		<key>ResetPasswordURL</key>
+		<string>ENTER URL HERE A USER WOULD USE TO RESET THEIR PASSWORD ON THEIR OWN</string>
+	</dict>
+	<key>PasswordPolicies</key>
+	<dict>
+		<key>ExpirationCountdownStartDay</key>
+		<integer>30</integer>
+		<key>ExpirationNotificationStartDay</key>
+		<integer>30</integer>
+		<key>NetworkCheck</key>
+		<integer>15</integer>
+		<key>SyncPasswordsMessage</key>
+		<string>Your passwords do not match. Please enter your Mac password. Your Mac password will be updated to your current Okta password.</string>
+	</dict>
+	<key>SignIn</key>
+	<dict>
+		<key>AutoAuthenticate</key>
+		<false/>
+		<key>AutoMFA</key>
+		<false/>
+		<key>OneTimePasswordMessage</key>
+		<string>Enter your verification code.</string>
+		<key>PasswordLabel</key>
+		<string>Okta Password</string>
+		<key>RequireSignIn</key>
+		<true/>
+		<key>UsernameLabel</key>
+		<string>Okta Username</string>
+		<key>WindowTitle</key>
+		<string>Sign in via Okta</string>
+		<key>MFAExcluded</key>
+		<array>
+			<string>question</string>
+			<string>token:hardware</string>
+			<string>web</string>
+			<string>webauthn</string>
+		</array>
+		<key>MFARename</key>
+		<dict>
+			<key>google:token:software:totp</key>
+			<string>Google Authenticator</string>
+			<key>okta:token:software:totp</key>
+			<string>Okta (Verification Code)</string>
+			<key>push</key>
+			<string>Okta (Push Notification)</string>
+		</dict>
+	</dict>
+	<key>UserHelp</key>
+	<dict>
+		<key>HelpOptions</key>
+		<string>ENTER A URL FOR A USER TO SUBMIT A TICKET OR CONTACT YOUR IT SUPPORT </string>
+		<key>HelpType</key>
+		<string>URL</string>
+	</dict>
+</dict>
+</plist>
