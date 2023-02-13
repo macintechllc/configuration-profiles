@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowNetworkSelection</key>
+	<true/>
+	<key>AuthServer</key>
+	<string>ENTER YOUR OKTA SERVER HERE Ex:mycompany.okta.com</string>
+	<key>BackgroundImage</key>
+	<string>ENTER PATH OF BACKGROUND IMAGE TO BRAND THE LOGIN SCREEN</string>
+	<key>CreateAdminUser</key>
+	<true/>
+	<key>CreateJamfConnectPassword</key>
+	<true/>
+	<key>CreateNewUserHide</key>
+	<true/>
+	<key>DenyLocal</key>
+	<true/>
+	<key>EULASubTitle</key>
+	<string>Acceptable Use Agreement</string>
+	<key>EULAText</key>
+	<string>ENTER TEXT HERE FOR A EULA. THIS WOULD FORCE A USER TO AGREE TO TERMS AND CONDITIONS EVERY TIME WHEN THEY LOGIN THROUGH JAMF CONNECT LOGIN </string>
+	<key>EULATitle</key>
+	<string>End User License Agreement</string>
+	<key>EnableFDE</key>
+	<true/>
+	<key>HelpURL</key>
+	<string>https://mycompany.okta.com</string>
+	<key>LocalFallback</key>
+	<true/>
+	<key>LocalHelpFile</key>
+	<string>PATH TO A LOCAL FILE ON THE MAC FOR A USER TO GET SUPPORT. EX: /Library/Application\ Support/COMPANY\ NAME/HELPME.pdf</string>
+	<key>LoginLogo</key>
+	<string>PATH TO A LOGO FOR JAMF CONNECT TO USE IF YOU DO NOT WANT TO USE THE DEFAULT ICON</string>
+	<key>LoginWindowMessage</key>
+	<string>Log in via Okta</string>
+	<key>MessageOTPEntry</key>
+	<string>Enter your verification code.</string>
+	<key>Migrate</key>
+	<true/>
+	<key>OIDCIgnoreCookies</key>
+	<true/>
+	<key>OIDCProvider</key>
+	<string>Okta</string>
+	<key>OIDCRedirectURI</key>
+	<string>https://127.0.0.1/jamfconnect</string>
+	<key>OIDCSecondaryLoginClientID</key>
+	<string>SEE DOCUMENTATION FOR USE OF SECONDARY LOGIN HERE https://learn.jamf.com/bundle/jamf-connect-documentation-2.19.0/page/Login_Window_Preferences.html </string>
+	<key>MFAExcluded</key>
+	<array>
+		<string>question</string>
+		<string>token:hardware</string>
+		<string>web</string>
+		<string>webauthn</string>
+	</array>
+	<key>MigrateUsersHide</key>
+	<array>
+		<string>grjamfadmin</string>
+		<string>siteops</string>
+		<string>ops</string>
+		<string>sops</string>
+		<string>ihjamfadmin</string>
+	</array>
+	<key>MFARename</key>
+	<dict>
+		<key>google:token:software:totp</key>
+		<string>Google Authenticator</string>
+		<key>okta:token:software:totp</key>
+		<string>Okta (Verification Code)</string>
+		<key>push</key>
+		<string>Okta (Push Notification)</string>
+	</dict>
+</dict>
+</plist>
